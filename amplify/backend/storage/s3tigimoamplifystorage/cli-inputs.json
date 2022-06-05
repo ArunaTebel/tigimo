@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3tigimoamplifystorage",
+  "bucketName": "tigimo-amplify-storage",
+  "policyUUID": "3677fefd",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

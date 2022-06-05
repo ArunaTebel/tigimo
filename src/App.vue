@@ -1,12 +1,12 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import {Authenticator} from "@aws-amplify/ui-vue";
 </script>
 
 <template>
-  <p class="text-red-900 text-2xl">TIGIMO</p>
+  <authenticator>
+    <template v-slot="{ user, signOut }">
+      <h1>Hello {{ user.username }}!</h1>
+      <button @click="signOut">Sign Out</button>
+    </template>
+  </authenticator>
 </template>
-
-<style>
-
-</style>

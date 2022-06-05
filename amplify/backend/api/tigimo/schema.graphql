@@ -1,0 +1,6 @@
+type Posting @model @auth(rules: [{allow: private, operations: [read]}, {allow: owner, operations: [update, delete, create]}]) {
+  id: ID!
+  title: String
+  url: String
+}
+ 

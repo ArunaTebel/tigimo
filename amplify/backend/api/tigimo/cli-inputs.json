@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "tigimo",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/tmp/amplify-9133ed09-5e32-4c38-8bf9-31e7214087b1/amplify/backend/api/tigimo/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authtigimo"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ],
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    }
+  }
+}

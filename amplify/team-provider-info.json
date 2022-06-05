@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tigimo-dev-175741-authRole",
+      "UnauthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-dev-175741-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-dev-175741-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-tigimo-dev-175741-deployment",
+      "UnauthRoleName": "amplify-tigimo-dev-175741-unauthRole",
+      "StackName": "amplify-tigimo-dev-175741",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:144533421062:stack/amplify-tigimo-dev-175741/e608b5e0-e4ca-11ec-a10b-06b8a903a4ca",
+      "AmplifyAppId": "d578jaja6n4ip"
+    },
+    "categories": {
+      "auth": {
+        "tigimo": {}
+      }
+    }
+  }
+}
