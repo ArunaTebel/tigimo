@@ -7,9 +7,6 @@
 </template>
 
 <script>
-import ArchDataStoreService from "../lib/services/ArchDataStoreService";
-import {DataStore} from "@aws-amplify/datastore";
-import {Hub} from "aws-amplify";
 
 export default {
   name: "TigimoPostingListComponent",
@@ -17,17 +14,6 @@ export default {
     return {
       postings: []
     }
-  },
-  async created() {
-    await DataStore.start()
-    const vm = this
-    Hub.listen("datastore", async hubData => {
-      const  { event, data } = hubData.payload;
-      if (event === "ready") {
-        vm.postings = await ArchDataStoreService.models.Posting.getAll()
-      }
-    })
-
   }
 }
 </script>
