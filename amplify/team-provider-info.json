@@ -1,19 +1,25 @@
 {
-  "dev": {
+  "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-tigimo-dev-175741-authRole",
-      "UnauthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-dev-175741-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-dev-175741-authRole",
+      "AuthRoleName": "amplify-tigimo-staging-183448-authRole",
+      "UnauthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-staging-183448-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::144533421062:role/amplify-tigimo-staging-183448-authRole",
       "Region": "ap-southeast-1",
-      "DeploymentBucketName": "amplify-tigimo-dev-175741-deployment",
-      "UnauthRoleName": "amplify-tigimo-dev-175741-unauthRole",
-      "StackName": "amplify-tigimo-dev-175741",
-      "StackId": "arn:aws:cloudformation:ap-southeast-1:144533421062:stack/amplify-tigimo-dev-175741/e608b5e0-e4ca-11ec-a10b-06b8a903a4ca",
-      "AmplifyAppId": "d578jaja6n4ip"
+      "DeploymentBucketName": "amplify-tigimo-staging-183448-deployment",
+      "UnauthRoleName": "amplify-tigimo-staging-183448-unauthRole",
+      "StackName": "amplify-tigimo-staging-183448",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:144533421062:stack/amplify-tigimo-staging-183448/2af0de30-ee6c-11ec-bb65-0af4e846a970",
+      "AmplifyAppId": "d30rbtrwy1z8xj"
     },
     "categories": {
       "auth": {
         "tigimo": {}
+      },
+      "function": {
+        "tigimoFetchBoards": {
+          "deploymentBucketName": "amplify-tigimo-staging-183448-deployment",
+          "s3Key": "amplify-builds/tigimoFetchBoards-66386f68437644397938-build.zip"
+        }
       }
     }
   }

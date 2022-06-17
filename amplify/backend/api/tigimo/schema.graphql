@@ -1,6 +1,25 @@
-type Posting @model @auth(rules: [{allow: private, operations: [read]}, {allow: owner, operations: [update, delete, create]}]) {
+type Posting @model @auth(rules: [{allow: public}, {allow: private, operations: [read]}, {allow: owner}]) {
   id: ID!
   title: String
   url: String
+  note: String
+  update_at: AWSTimestamp
+  create_at: AWSTimestamp
+  boardID: ID! @index(name: "byBoard")
+}
+
+enum VisibilityType {
+  PUBLIC
+  PRIVATE
+}
+
+type Board @model @auth(rules: [{allow: public}, {allow: private, operations: [read]}, {allow: owner}]) {
+  id: ID!
+  name: String
+  description: String
+  visibility: VisibilityType
+  update_at: AWSTimestamp
+  create_at: AWSTimestamp
+  Postings: [Posting] @hasMany(indexName: "byBoard", fields: ["id"])
 }
  
